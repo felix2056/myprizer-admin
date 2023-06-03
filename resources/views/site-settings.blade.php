@@ -46,7 +46,7 @@
                         <div class="mb-3">
                             <label class="text-black">Site Footer Logo</label>
                             <div class="text-center @error('site_footer_logo') border-red @enderror">
-                                <img id="siteFooterLogo-display" class="w-[100px] h-auto mx-auto" src="{{ $site_settings->site_footer_logo ?? '/images/upload.png' }}" alt="">
+                                <img id="siteFooterLogo-display" class="w-[100px] h-auto mx-auto" src="{{ $site_settings->site_footer_logo_path ?? '/images/upload.png' }}" alt="">
                             </div>
                             @error('site_footer_logo')
                                 <p class="text-red text-xs mt-1">{{ $message }}</p>

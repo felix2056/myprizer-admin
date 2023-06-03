@@ -115,17 +115,17 @@ class SiteSetting extends Model
         return $currency_symbol;
     }
 
-    public function getSiteHeaderLogoAttribute()
+    public function getSiteHeaderLogoPathAttribute()
     {
         return config('app.url') . '/storage/logo/' . $this->attributes['site_header_logo'];
     }
 
-    public function getSiteFooterLogoAttribute()
+    public function getSiteFooterLogoPathAttribute()
     {
         return config('app.url') . '/storage/logo/' . $this->attributes['site_footer_logo'];
     }
 
-    public function getSiteFaviconAttribute()
+    public function getSiteFaviconPathAttribute()
     {
         return config('app.url') . '/storage/logo/' . $this->attributes['site_favicon'];
     }

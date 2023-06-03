@@ -43,11 +43,11 @@ class DashboardController extends Controller
 
                 // delete old logo
                 if ($site_settings->site_header_logo) {
-                    unlink(storage_path('app/public/logo/' . $site_settings->site_header_logo));
+                    unlink(storage_path('app/public/' . $site_settings->site_header_logo));
                 }
 
                 $file_name = 'site_header_logo.' . $file->getClientOriginalExtension();
-                $file->storeAs('public/logo', $file_name);
+                $file->storeAs('public', $file_name);
 
                 $site_settings->site_header_logo = $file_name;
             }
@@ -57,11 +57,11 @@ class DashboardController extends Controller
 
                 // delete old logo
                 if ($site_settings->site_footer_logo) {
-                    unlink(storage_path('app/public/logo/' . $site_settings->site_footer_logo));
+                    unlink(storage_path('app/public/' . $site_settings->site_footer_logo));
                 }
 
                 $file_name = 'site_footer_logo.' . $file->getClientOriginalExtension();
-                $file->storeAs('public/logo', $file_name);
+                $file->storeAs('public', $file_name);
 
                 $site_settings->site_footer_logo = $file_name;
             }
@@ -71,11 +71,11 @@ class DashboardController extends Controller
 
                 // delete old favicon
                 if ($site_settings->site_favicon) {
-                    unlink(storage_path('app/public/logo/' . $site_settings->site_favicon));
+                    unlink(storage_path('app/public/' . $site_settings->site_favicon));
                 }
 
                 $file_name = 'site_favicon.' . $file->getClientOriginalExtension();
-                $file->storeAs('public/logo', $file_name);
+                $file->storeAs('public', $file_name);
 
                 $site_settings->site_favicon = $file_name;
             }

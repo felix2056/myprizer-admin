@@ -117,17 +117,17 @@ class SiteSetting extends Model
 
     public function getSiteHeaderLogoAttribute()
     {
-        return config('app.url') . '/storage/logo' . $this->site_header_logo;
+        return config('app.url') . '/storage/logo' . $this->attributes['site_header_logo'];
     }
 
     public function getSiteFooterLogoAttribute()
     {
-        return config('app.url') . '/storage/logo' . $this->site_footer_logo;
+        return config('app.url') . '/storage/logo' . $this->attributes['site_footer_logo'];
     }
 
     public function getSiteFaviconAttribute()
     {
-        return config('app.url') . '/storage/favicon' . $this->site_favicon;
+        return config('app.url') . '/storage/favicon' . $this->attributes['site_favicon'];
     }
 
     public function getActivitylogOptions(): LogOptions

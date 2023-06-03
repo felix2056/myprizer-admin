@@ -43,7 +43,7 @@ class DashboardController extends Controller
 
                 // convert to svg
                 $manager = new ImageManager();
-                $image = $manager->make($file)->resize(120,120)->encode('svg');
+                $image = $manager->make($file)->encode('png');
                 $file_name = 'logo.' . $image->extension();
 
                 // delete old logo

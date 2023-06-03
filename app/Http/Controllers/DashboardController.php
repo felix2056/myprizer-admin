@@ -60,7 +60,7 @@ class DashboardController extends Controller
                     unlink(storage_path('app/public/logo/' . $site_settings->site_footer_logo));
                 }
 
-                $file_name = 'site_footer_logo' . $file->getClientOriginalExtension();
+                $file_name = 'site_footer_logo.' . $file->getClientOriginalExtension();
                 $file->storeAs('public/logo', $file_name);
 
                 $site_settings->site_footer_logo = $file_name;
@@ -74,7 +74,7 @@ class DashboardController extends Controller
                     unlink(storage_path('app/public/logo/' . $site_settings->site_favicon));
                 }
 
-                $file_name = 'site_favicon' . $file->getClientOriginalExtension();
+                $file_name = 'site_favicon.' . $file->getClientOriginalExtension();
                 $file->storeAs('public/logo', $file_name);
 
                 $site_settings->site_favicon = $file_name;

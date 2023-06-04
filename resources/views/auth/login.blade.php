@@ -10,7 +10,7 @@
         <div class="pt-[120px] pb-[120px]">
             <div class="grid grid-cols-12 shadow-lg bg-white overflow-hidden rounded-md ">
                 <div class="col-span-4 lg:col-span-6 relative h-full hidden lg:block">
-                    <div class="data-bg absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat" data-bg="{{ $site_settings->site_header_logo }}"></div>
+                    <div class="data-bg absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat" data-bg="{{ $site_settings->site_header_logo_path }}"></div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 md:w-[500px] mx-auto my-auto  pt-[50px] py-[60px] px-5 md:px-[60px]">
                     <div class="text-center">
